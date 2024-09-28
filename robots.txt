@@ -2,7 +2,7 @@
 
 User-agent: *
 
-Sitemap: https://www.niraiyaemailaccounts.com/sitemap.xml
+Sitemap: https://www.getthit.com/sitemap.xml
 
 Disallow: /dashboard
 Disallow: /earntraffic

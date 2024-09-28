@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="content-language" content="en-us">
+    <base href="/" />
+    <meta name="robots" content="noindex" />
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: Calibri;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        div {
+            text-align: center;
+				}
+		@keyframes color {
+			0%   { background: ##2c3e50; }
+		  20%  { background: #16a085; }
+		  40%  { background: #27ae60; }
+		  60%  { background: #8e44ad; }
+		  80%  { background: #d35400; }
+		  100% { background: #c0392b; }		    
+		}
+
+		body {
+		  background: #33CCCC; /* Fallback */
+		  animation: color 9s infinite linear;
+		}		
+    </style>
+	<title></title>
+</head>
+
+<body style="margin-top: 0px;margin-bottom: 0px;background-color:#c0392b">
+    <p style="margin-top: 0px;margin-bottom: 0px;color:white;" id="txtMessage">
+        
+    </p>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H1ZF9KZRQE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H1ZF9KZRQE');
+    </script>
+	
+	<script>
+		var i = 0;
+		var txt = 'Every day, please close & re-open, and submit a new token to our exchange software to ensure that your hits are properly recorded.';
+		var speed = 25;
+
+		window.onload = function() {
+		  document.getElementById("txtMessage").innerHTML = '';
+		  typeWriter();
+		  
+		  const interval = setInterval(function() {
+		   
+		   document.getElementById("txtMessage").innerHTML = '';
+		   txt = 'Every day, please close & re-open, and submit a new token to our exchange software to ensure that your hits are properly recorded.';
+		   i = 0;
+		   typeWriter();
+		   }, 17000); 
+		   
+		  		fetch("https://api.ipify.org/?format=json")
+  .then(response => response.json())
+  .then(json => {
+			 console.log(json);
+			 document.title = json.ip + "-CheckUserCount DesktopClient html";
+  })
+  .catch(error => {
+    console.error('Error loading');
+   
+  });
+		};
+		 
+		function typeWriter() {  
+		  if (i < txt.length) {
+			document.getElementById("txtMessage").innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+		  }
+		}
+	</script>
+</body>
+</html>

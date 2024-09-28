@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="content-language" content="en-us">
+    <base href="/" />
+    <meta name="robots" content="noindex" />
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: Calibri;
+        }      	
+    </style>
+
+<meta http-equiv="cache-control" content="no-cache" />
+
+<meta http-equiv="pragma" content="no-cache" />
+
+<meta http-equiv="expires" content="-1" />
+<title>Getthit_Ads_Dashboard</title>	
+</head>
+
+<body >  
+  
+   <p></p>
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-loading-overlay/2.1.7/loadingoverlay.min.js" integrity="sha512-hktawXAt9BdIaDoaO9DlLp6LYhbHMi5A36LcXQeHgVKUH6kJMOQsAtIw2kmQ9RERDpnSTlafajo6USh9JUXckw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-JJ7PX5GCJK"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-JJ7PX5GCJK');
+		</script>
+	
+	<script>
+		$.LoadingOverlay("show");
+		
+		
+		$(window).on('load', function() {
+		
+		
+});	
+
+$( document ).ready(function() {
+    var params = new window.URLSearchParams(window.location.search);
+		
+		var pageURLMobileGUID = params.get('PageURLMobileGUID');
+		var pageURLDesktopGUID = params.get('PageURLDesktopGUID');
+		var pageURLTabletGUID = params.get('PageURLTabletGUID');
+		
+		var screenGUID = params.get('ScreenGUID');
+		
+		var adURL = params.get('AdURL');		
+		
+		$('p').html('<a href="' + adURL +'" rel="dofollow">Ads</a>');
+				
+		if (pageURLMobileGUID != undefined)
+		{
+			$.ajax({
+				url: "https://userauth.getthit.com/api/Ads/LogAdsClickMobile",
+				data: {"screenGUID": screenGUID, pageURLMobileGUID: pageURLMobileGUID},
+				headers: {"payanpattupatippu": "20"},
+				success: function(response) {
+						$('a')[0].click();
+					
+				},
+				error: function(xhr) {
+					alert(xhr);
+				}
+			});
+		}
+		
+		else if (pageURLDesktopGUID != undefined)
+		{
+		
+			$.ajax({
+				url: "https://userauth.getthit.com/api/Ads/LogAdsClickDesktop",
+				data: {"screenGUID": screenGUID, pageURLDesktopGUID: pageURLDesktopGUID},
+					headers: {"payanpattupatippu": "20"},
+				success: function(response) {
+				
+					$('a')[0].click();
+		
+				},
+				error: function(xhr) {
+					alert(xhr);
+				}
+			});
+		}
+		
+		else if (pageURLTabletGUID != undefined)
+		{
+			$.ajax({
+				url: "https://userauth.getthit.com/api/Ads/LogAdsClickTablet",
+				data: {"screenGUID": screenGUID, pageURLTabletGUID: pageURLTabletGUID},
+				headers: {"payanpattupatippu": "20"},
+				success: function(response) {
+				
+						$('a')[0].click();
+		
+				},
+				error: function(xhr) {
+					alert(xhr);
+				}
+			});			
+		}
+});
+	</script>
+</body>
+</html>

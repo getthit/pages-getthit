@@ -1,0 +1,22 @@
+# Please do not watch our robots.txt, watch yours instead!
+
+User-agent: *
+
+Sitemap: https://www.niraiyaemailaccounts.com/sitemap.xml
+
+Disallow: /dashboard
+Disallow: /earntraffic
+Disallow: /myreferrals
+Disallow: /mysettings
+Disallow: /changepassword
+Disallow: /forgetpasswordcodeexpired
+Disallow: /verifyforgetpassword
+Disallow: /signUpVerificationIdExpired
+Disallow: /signUpVerificationPending
+Disallow: /signUpVerificationPendingSignIn
+Disallow: /userVerified
+Disallow: /verificationCodeExpired
+Disallow: /verifyuseremailaddress
+Disallow: /adblocked.html
+Disallow: /devToolsNotAllowed.html
+

@@ -1,0 +1,86 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is the traffic real?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is automated traffic. We use auto-surf software with automation on our users' machines to create it. It implies that the traffic seems to be actual human traffic, but it doesn't make purchases."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will the traffic help me with Ranking, SEO, etc.?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Having more traffic in Google Analytics truly helps with your position because Google usually ranks higher websites with more traffic. However, because no one can truly understand the ranking algorithms, no certain ranking results can be guaranteed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the purpose of your services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The majority of our clients use our services to increase the traffic numbers on their websites. We can enhance your traffic volume, add additional organic or social traffic, and work with almost every aspect of your traffic."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Adsense (or any other PPC programme) safe here?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, PPC advertising are completely safe; we don't click on ads, therefore you won't be breaking any of these program' restrictions. In the case of Adsense or other popular PPCs, we don't even load the advertisements by default, so you won't see any impressions by default."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Website Bounce rate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The bounce rate is the percentage of visitors that only glanced at one page before closing the browser. Keep in mind that a greater bounce rate reduces the amount of traffic you receive because we have to close the browser quickly to avoid adding more page views to the visit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Bounce rate your traffic has?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can instruct us to choose any bounce rate by enabling or disabling it. This option can be adjusted in the settings page of your website."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is my website's best bounce rate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no definitive answer to this topic; however, the average bounce rate is between 30% and 70%. We recommend conducting a competitive research of your competitors' websites to see what is typical in your industry."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will your traffic help me get a higher Alexa ranking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We don't support Alexa ranking boosting. Since it has been retired."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it possible for you to provide traffic to a specific country?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On a regular basis, we deliver traffic to the majority of the world's countries. However, country targeted traffic is currently in development and will be accessible shortly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you accept adult, shortener, redirect, and illegal links?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We don't accept those sites because our exchange software is run on genuine users computers. It will create bad impression on us."
+      }
+    }
+  ]
+}
